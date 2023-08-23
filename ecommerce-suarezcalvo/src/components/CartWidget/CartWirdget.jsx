@@ -1,8 +1,9 @@
+import { BsCart4 } from 'react-icons/bs'
 
 const CartWirdget = ({saludo}) => {
   return (
     <div>
-        JJ
+        <BsCart4/>
         {saludo}
     </div>
   )
