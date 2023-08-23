@@ -1,15 +1,17 @@
-
+import  Navbar  from 'react-bootstrap/Navbar'
 import  Container  from 'react-bootstrap/Container'
 import  Nav  from 'react-bootstrap/Nav'
 import  NavDropdown  from 'react-bootstrap/NavDropdown'
-import  Navbar  from 'react-bootstrap/Navbar'
+
+
+
 import img from '../../../src/assets/react.svg'
 import CartWirdget from '../CartWidget/CartWirdget'
 
 
 const NavBar = () => {
     return (
-      <Navbar  expand="lg" className="bg-body-tertiary">
+      <Navbar fixed='top' expand='md' className="" bg="white">
         <Container fluid>
           <Navbar.Brand href="#home">
             <img src={img} alt='imagen'/>
@@ -17,17 +19,17 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <Nav.Link href="#features">Inicio</Nav.Link>
+              <Nav.Link href="#pricing">Sobre Nosotros</Nav.Link>
+              <NavDropdown title="Productos" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Mercaderia</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                  Hoodies
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Pantalones</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  Opiniones
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -40,7 +42,7 @@ const NavBar = () => {
               </Nav.Link>
 
               <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                Perfil
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
