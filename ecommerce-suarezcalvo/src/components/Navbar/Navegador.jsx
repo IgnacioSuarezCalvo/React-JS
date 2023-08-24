@@ -5,7 +5,7 @@ import  NavDropdown  from 'react-bootstrap/NavDropdown'
 
 
 
-import img from '../../../src/assets/react.svg'
+import img from '../../../favicon/favicon-32x32.png'
 import CartWirdget from '../CartWidget/CartWirdget'
 
 
