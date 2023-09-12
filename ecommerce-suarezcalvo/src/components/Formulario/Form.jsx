@@ -1,9 +1,9 @@
 import { useState } from "react"
 
-const Form = (handleOnChange, formData, errors, validateForm) => {
+const Form = ({handleOnChange, formData, errors, validateForm}) => {
 
-    const handleOnSubmit = (e) =>{
-        e.preventDefault()
+    const handleOnSubmit = (event) =>{
+        event.preventDefault()
         if(validateForm()){
             console.log('enviando datos', formData)
         }
@@ -20,7 +20,7 @@ const Form = (handleOnChange, formData, errors, validateForm) => {
                         value={formData.name}
                         onChange={handleOnChange}
                     />
-                    {errors && errors.name && <span>{error.name}</span>}
+                    {errors && errors.name && <span>{errors.name}</span>}
                     <input 
                         type="text" 
                         name="email" 
@@ -28,7 +28,7 @@ const Form = (handleOnChange, formData, errors, validateForm) => {
                         value={formData.email}
                         onChange={handleOnChange}
                     />
-                    {errors && errors.email && <span>{error.email}</span>}
+                    {errors && errors.email && <span>{errors.email}</span>}
 
                     <button>Enviar</button>
             </form>

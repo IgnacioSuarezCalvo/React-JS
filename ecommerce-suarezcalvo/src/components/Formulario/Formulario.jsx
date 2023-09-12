@@ -8,19 +8,22 @@ const Formulario = () => {
     const[formData, setFormData] = useState({
         name: '',
         email: ''
-
     })
 
-    const handleOnChange= (e) =>{
+    const handleOnChange = (event) =>{
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value
+            [event.target.name]: event.target.value
         })
     }
+    console.log(formData)
   return (
     <div>
         {/* <Form formData={formData} handleOnChange={handleOnChange}   /> */}
-        <FormWhitValidation formData={formData} handleOnChange={handleOnChange} />
+        <FormWhitValidation 
+            formData={formData} 
+            handleOnChange={handleOnChange} 
+        />
     </div>
   )
 }
