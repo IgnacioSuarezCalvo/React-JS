@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/Counter/ItemCount';
 import Footer from './components/Footer/Footer';
+import Formulario from './components/Formulario/Formulario';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <NavBar />
           <ItemListContainer/>
           <ItemCount initial={1} stock={4} onAdd={onAdd} />
+          <Formulario/>
           <Footer />
       </div>
   )
