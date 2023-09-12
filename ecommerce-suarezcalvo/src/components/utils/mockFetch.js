@@ -6,13 +6,20 @@ const products = [
     {id: 5, name:'Producto 5', price: 1000, stock:20, description:'Esto es una description', imageUrl:'https://lavozdelmuro.net/wp-content/uploads/2020/04/juegos-de-mesa-05.jpg'}
   ] 
   
-export const mFetch = () => new Promise ((res, rej)=>{
-    const condition = true
-    if(condition){
+export const mFetch = (pid) => new Promise ((res, rej)=>{
+    // const condition = true
       setTimeout(()=>{
-        res(products)
+        res(pid ? products.find(products=>products.id === pid): products)
       }, 3000)
-    }else{
-      rej('No tengo mas plata')
-    }
   })
+
+// export const mFetchOne = () => new Promise ((res, rej)=>{
+//     const condition = true
+//     if(condition){
+//       setTimeout(()=>{
+//         res(products[0])
+//       }, 3000)
+//     }else{
+//       rej('No tengo mas plata')
+//     }
+//   })
