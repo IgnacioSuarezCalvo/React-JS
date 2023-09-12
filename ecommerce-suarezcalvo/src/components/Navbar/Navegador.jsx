@@ -11,7 +11,7 @@ import CartWirdget from '../CartWidget/CartWirdget'
 
 const NavBar = () => {
     return (
-      <Navbar fixed='top' expand='md' className="" bg="white">
+      <Navbar expand='md' className="" bg="white">
         <Container fluid>
           <Navbar.Brand href="#home">
             <img src={img} alt='imagen'/>

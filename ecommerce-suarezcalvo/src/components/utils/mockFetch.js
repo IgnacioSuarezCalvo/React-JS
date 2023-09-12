@@ -6,7 +6,7 @@ const products = [
     {id: 5, name:'Producto 5', price: 1000, stock:20, description:'Esto es una description', imageUrl:'https://lavozdelmuro.net/wp-content/uploads/2020/04/juegos-de-mesa-05.jpg'}
   ] 
   
-  export const mFetch = () => new Promise ((res, rej)=>{
+export const mFetch = () => new Promise ((res, rej)=>{
     const condition = true
     if(condition){
       setTimeout(()=>{
@@ -16,5 +16,3 @@ const products = [
       rej('No tengo mas plata')
     }
   })
-
-export default products

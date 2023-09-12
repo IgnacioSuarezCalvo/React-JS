@@ -1,10 +1,11 @@
 
+import { useRef, useState } from 'react';
 import NavBar from './components/Navbar/Navegador';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Footer from './components/Footer/Footer';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/Counter/ItemCount';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -16,7 +17,7 @@ function App() {
   return (
       <div>
           <NavBar />
-          <ItemListContainer titulo={'Hola como estan?'}/>
+          <ItemListContainer/>
           <ItemCount initial={1} stock={4} onAdd={onAdd} />
           <Footer />
       </div>
