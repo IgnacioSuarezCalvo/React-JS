@@ -22,14 +22,14 @@ const NavBar = () => {
               <Nav.Link href="#features">Inicio</Nav.Link>
               <Nav.Link href="#pricing">Sobre Nosotros</Nav.Link>
               <NavDropdown title="Productos" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Mercaderia</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Juegos</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Hoodies
+                  Juegos de mesa
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Pantalones</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Juegos de cartas</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Opiniones
+                  Juegos a pedido
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
