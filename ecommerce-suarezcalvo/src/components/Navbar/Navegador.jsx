@@ -1,7 +1,10 @@
+import {Link} from "react-router-dom"
+
 import  Navbar  from 'react-bootstrap/Navbar'
 import  Container  from 'react-bootstrap/Container'
 import  Nav  from 'react-bootstrap/Nav'
 import  NavDropdown  from 'react-bootstrap/NavDropdown'
+
 
 
 
@@ -13,13 +16,13 @@ const NavBar = () => {
     return (
       <Navbar expand='md' className="" bg="white">
         <Container fluid>
-          <Navbar.Brand href="#home">
+          <Link to='/'><Navbar.Brand href="#home">
             <img src={img} alt='imagen'/>
-          </Navbar.Brand>
+          </Navbar.Brand></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Inicio</Nav.Link>
+              <Link to='/'>Inicio</Link>
               <Nav.Link href="#pricing">Sobre Nosotros</Nav.Link>
               <NavDropdown title="Productos" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Juegos</NavDropdown.Item>
