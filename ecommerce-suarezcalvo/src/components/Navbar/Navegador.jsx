@@ -23,30 +23,27 @@ const NavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Link to='/'>Inicio</Link>
-              <Nav.Link href="#pricing">Sobre Nosotros</Nav.Link>
-              <NavDropdown title="Productos" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Juegos</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Juegos de mesa
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Juegos de cartas</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Juegos a pedido
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Link to="/category/juegos">Juegos</Link>
+              <Link to="/category/juegos de mesa">Juegos de mesa</Link>
+
+              
+                {/* <NavDropdown title="Productos" id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Juegos</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Juegos de mesa</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Juegos de cartas</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">Juegos a pedido</NavDropdown.Item>
+                </NavDropdown> */}
+              
+
             </Nav>
             <Nav>
-              
-              <Nav.Link href="#deets">
-                
-                <CartWirdget saludo={'Practica'}/>
-              
-              </Nav.Link>
-
-              <Nav.Link eventKey={2} href="#memes">
+                <Link to='/cart'>
+                  <CartWirdget />
+                </Link>
+              {/* <Nav.Link eventKey={2} href="#memes">
                 Perfil
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
