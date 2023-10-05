@@ -13,12 +13,13 @@ import CartWirdget from '../CartWidget/CartWirdget'
 
 
 const NavBar = () => {
+   
     return (
       <Navbar expand='md' className="" bg="white">
         <Container fluid>
-          <Link to='/'><Navbar.Brand href="#home">
+          <Link to='/'>
             <img src={img} alt='imagen'/>
-          </Navbar.Brand></Link>
+          </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -34,16 +35,11 @@ const NavBar = () => {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">Juegos a pedido</NavDropdown.Item>
                 </NavDropdown> */}
-              
-
             </Nav>
             <Nav>
                 <Link to='/cart'>
                   <CartWirdget />
                 </Link>
-              {/* <Nav.Link eventKey={2} href="#memes">
-                Perfil
-              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
