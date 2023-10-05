@@ -10,7 +10,7 @@ export const mFetch = (pid) => new Promise ((res, rej)=>{
     // const condition = true
       setTimeout(()=>{
         res(pid ? products.find(products=>products.id === pid): products)
-      }, 3000)
+      }, 1000)
   })
 
 // export const mFetchOne = () => new Promise ((res, rej)=>{
