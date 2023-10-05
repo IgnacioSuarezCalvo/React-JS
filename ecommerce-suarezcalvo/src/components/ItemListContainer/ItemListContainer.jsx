@@ -26,7 +26,7 @@ const ItemListContainer = () =>{
     const handleAddProduct = () =>{
       setProduct([
         ...products,
-        {id: products.length+1,name:'Producto nuevo',price:1500, description:'Este es un producto nuevo'}
+        {id: products.length+1, name:'Producto nuevo',price:1500, description:'Este es un producto nuevo'}
       ])
     }
     

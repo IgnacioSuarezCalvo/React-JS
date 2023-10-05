@@ -4,11 +4,13 @@ import ItemCount from "../../Counter/ItemCount"
 import { useState } from "react"
 
 const ItemDetail = ({products}) => {
+    
     const [isCounter, setIsCounter] = useState(true)
     const{addProduct} = useCartContext()
     const onAdd = (quantity) =>{
         addProduct( {...products,quantity} )
         setIsCounter(false)
+        
     }
     return (
         <div className="row">
@@ -23,6 +25,7 @@ const ItemDetail = ({products}) => {
                 </div>
             </div>
             <div className="col">
+                
                 {
                     isCounter ?
                         <ItemCount initial={1} stock={5} onAdd={onAdd}/>
