@@ -1,6 +1,6 @@
 Curso de React JS de Ignacio Suarez Calvo
 
-Link del Deploy:
+Link del Deploy: https://gamesvg.netlify.app/
 
 Descripcion del proyecto: Es una pagina no muy detallada de lo que se conoce como ecommerce sobre juegos donde el usuario puede comprar juegos con poca variedad
 
