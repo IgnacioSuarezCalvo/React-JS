@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 const Item =memo(({products}) => {
   return (
-    <div className="card w-50"> 
+    <div className="card w-50 mt-5"> 
         <h3><p className="mt-1">{products.name}</p></h3>
         <div className="card-body ">
           <img className="w-25 card-img-top" src={products.imageUrl} alt="imagen juego"/>

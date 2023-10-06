@@ -32,7 +32,7 @@ const ItemListContainer = () =>{
     return (
       <center>
         <div className="row">
-          {loading ? <h2>Cargando</h2> : <ItemList products={products} />}
+          {loading ? <h1> Cargando </h1> : <ItemList products={products} />}
           </div>
       </center>
     )
