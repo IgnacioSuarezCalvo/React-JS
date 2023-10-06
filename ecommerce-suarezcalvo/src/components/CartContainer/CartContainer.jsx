@@ -42,30 +42,31 @@ const CartContainer = () => {
     })
   }
   return (
-    <>
-      {id != '' && <h3>Se genero la orden de compra{id}</h3>}
+    <div className="row">
+      {id != '' && <h3 className="text-center"> Se genero la orden de compra {id} </h3>}
       {cartList.length > 0 ?
-        <div>
-          {cartList.map(prod => <div key={prod.id}> 
-          <img src={prod.imageUrl} className="w-25" />
-          {prod.name} - {prod.price} -  Cantidad: {prod.quantity}
-          <button onClick={() =>deleteItem(prod.id)}> X </button>
+        <div className="col-6">
+          {cartList.map(prod => 
+          <div key={prod.id} > 
+            <img src={prod.imageUrl} className="w-25" />
+            {prod.name} - {prod.price} -  Cantidad: {prod.quantity}
+            <button onClick={() =>deleteItem(prod.id)}> X </button>
           </div>)}
-          <button onClick={deleteCart}> Vaciar Carrito</button>
-          {precioTotal() != 0 && <h2>Precio total: {precioTotal()}</h2>}
-          <form onSubmit={handleAddOrder}>
-            <input type="text" name="name" placeholder="Ingresar el nombre" value={dataForm.name} onChange={handleOnChange}/>
-            <input type="text" name="phone" placeholder="Ingresar el telefono" value={dataForm.phone} onChange={handleOnChange}/>
-            <input type="email" name="email" placeholder="Ingresar el email " value={dataForm.email} onChange={handleOnChange}/>
-            <button className="btn-outline-sucess">Terminar compra</button>
+          <button onClick={deleteCart} className="btn btn-outline-danger mt-4"> Vaciar Carrito</button>
+          {precioTotal() != 0 && <h2 className="text-center mt-2">Precio total: {precioTotal()}</h2>}
+          <form onSubmit={handleAddOrder} className="row d-flex text-center">
+            <input className="mt-2" type="text" name="name" placeholder="Ingresar el nombre" value={dataForm.name} onChange={handleOnChange}/>
+            <input className="mt-2" type="text" name="phone" placeholder="Ingresar el telefono" value={dataForm.phone} onChange={handleOnChange}/>
+            <input className="mt-2" type="email" name="email" placeholder="Ingresar el email " value={dataForm.email} onChange={handleOnChange}/>
+            <button className="btn btn-success mt-2">Terminar compra</button>
           </form>
         </div>
         :
         <center>
           <h2> No hay productos en el carrito</h2>
-          <Link to='/'>Ir al inicio</Link>
+          <Link to='/' className="btn btn-outline-info">Ir al inicio</Link>
         </center>}       
-      </>
+      </div>
   )
 }
 

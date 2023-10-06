@@ -4,7 +4,7 @@ import { useCartContext } from '../context/CartContext'
 const CartWirdget = () => {
   const{cantidadTotal} =useCartContext()
   return (
-    <div>
+    <div >
         {cantidadTotal()!=0 && cantidadTotal()}
         <BsCart4/>
         

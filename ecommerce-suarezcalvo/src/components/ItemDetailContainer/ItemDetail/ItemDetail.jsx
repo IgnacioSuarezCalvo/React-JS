@@ -15,32 +15,37 @@ const ItemDetail = ({products}) => {
     }
     return (
         <div className="row">
-            <h2>Vista de detalle</h2>
-            <div className="col">
-                <img className="w-25" src={products.imageUrl} alt="imagen" />
-                <div>
-                    <p>Nombre:{products.name}</p>
-                    <p>Description:{products.description}</p>
-                    <p>Precio:{products.precio}</p>
-                    <p>Stock:{products.stock}</p>
+            <h2 className="text-center">Detalle del producto</h2>
+            <div className="col-6">
+                <div className="text-center">
+                <h3>{products.name}</h3>
+                    <img className="w-50" src={products.imageUrl} alt="imagen" />
+                </div>
+                <div className="mt-2">
+
+                    <h5>Description: {products.description}</h5>
+                    <h3>Price: {products.price}</h3>
+                    <h3>Stock: {products.stock}</h3>
                 </div>
             </div>
-            <div className="col">
-                
-                {
-                    isCounter ?
-                        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+            <div className="col-6">
+                <div className="text-center">
+                    {
+                        isCounter ?
+                            <ItemCount initial={1} stock={5} onAdd={onAdd}/>
 
-                    :
-                        <>
-                            <Link to={'/cart'}>
-                                <button className="btn btn-outline-dark">Ir a Cart</button>
-                            </Link>
-                            <Link to={'/'}>
-                                <button className="btn btn-outline-dark">Ir a Inicio</button>
-                            </Link>
-                        </>
-                }
+                        :
+                            <>
+                                <Link to={'/cart'}>
+                                    <button className="btn btn-outline-success m-2">Ir a Cart</button>
+                                </Link>
+                                <Link to={'/'}>
+                                    <button className="btn btn-outline-warning">Ir a Inicio</button>
+                                </Link>
+                            </>
+                        
+                    }
+                </div>
                 
             </div>
         </div>
