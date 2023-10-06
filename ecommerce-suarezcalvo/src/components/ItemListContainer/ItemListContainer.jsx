@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { mFetch } from "../utils/mockFetch"
 import { useParams } from "react-router-dom"
 import { collection, getDocs, getFirestore, where, query} from 'firebase/firestore'
 

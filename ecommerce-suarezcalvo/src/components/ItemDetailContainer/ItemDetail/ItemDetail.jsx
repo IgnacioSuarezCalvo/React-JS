@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 import { useCartContext } from "../../context/CartContext"
-import ItemCount from "../../Counter/ItemCount"
 import { useState } from "react"
+import ItemCount from "../../Counter/ItemCount"
+
 
 const ItemDetail = ({products}) => {
     

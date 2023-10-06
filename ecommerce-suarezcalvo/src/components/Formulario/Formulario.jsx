@@ -19,7 +19,6 @@ const Formulario = () => {
     console.log(formData)
   return (
     <div>
-        {/* <Form formData={formData} handleOnChange={handleOnChange}   /> */}
         <FormWhitValidation 
             formData={formData} 
             handleOnChange={handleOnChange} 

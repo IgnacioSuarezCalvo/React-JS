@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {CartContextProvider} from "./components/context/CartContext";
 
@@ -12,10 +12,6 @@ import CartContainer from "./components/CartContainer/CartContainer";
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
-
 
 function App() {
    const onAdd = (count) =>{
