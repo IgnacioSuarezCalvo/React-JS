@@ -18,13 +18,6 @@ const ItemDetailContainer = () => {
       .then(resp => setProducts(resp))
     },[])
 
-
-    // useEffect(()=>{
-    //     mFetch(Number(pid))
-    //     .then(resp=>setProducts(resp))
-    //     .catch(err=>console.log(err))
-        
-    // },[])
   return (
     <div>
         <ItemDetail products={products}/>
