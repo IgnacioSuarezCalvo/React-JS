@@ -4,7 +4,6 @@ import {CartContextProvider} from "./components/context/CartContext";
 
 import NavBar from './components/Navbar/Navegador';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Footer from './components/Footer/Footer';
 import Formulario from './components/Formulario/Formulario';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartContainer from "./components/CartContainer/CartContainer";
@@ -32,7 +31,7 @@ function App() {
   
             </Routes>
           </CartContextProvider>
-          <Footer />
+          
       </BrowserRouter>
   )
 }
